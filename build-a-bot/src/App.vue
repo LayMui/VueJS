@@ -17,13 +17,13 @@
 </template>
 
 <script>
-// import HomePage from './home/HomePage.vue';
+// eslint-disable-next-line no-unused-vars
+import HomePage from './home/HomePage.vue';
 import RobotBuilder from './build/RobotBuilder.vue';
 
 export default {
   name: 'App',
   components: {
-    // eslint-disable-next-line vue/no-unused-components
     RobotBuilder,
   },
 };
@@ -34,6 +34,13 @@ body {
   background: linear-gradient(to bottom, #555, #999);
   background-attachment: fixed;
 }
+</style>
+
+<style scoped>
+.content >>> .robot-name {
+  color: red;
+  border: 2px solid blue;
+  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
